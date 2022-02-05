@@ -32,3 +32,19 @@ VIDEO:  Record a video where you explain how F25 works line by line. Max 3 minut
         The video must also show how you call F25 from the console.
 
 */
+
+function F25 ( container ) {
+
+  for ( let i = 0; i < 25; i++ ) {
+    let gridContainer = document.querySelector( container );
+    let div = document.createElement( "div" );
+    div.innerHTML = Math.floor( Math.random() * 25 );
+
+    gridContainer.appendChild( div );
+  }
+
+}
+
+F25( "#gridContainer" );
+
+console.log(F25); 

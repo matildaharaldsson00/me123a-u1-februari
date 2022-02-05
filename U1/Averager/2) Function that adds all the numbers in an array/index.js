@@ -11,6 +11,7 @@ TEST
 adder_three([1, 1, 1]) should return 3
 adder_three([2, 1, -2]) should return 1
 
+
 */
 
 let a1 = [1, 2, 3];
@@ -23,6 +24,8 @@ function adder_three ( _array ) {
   }
   return sum;
 }
+
+
 
 function adder ( _array ) {
   let sum = 0
