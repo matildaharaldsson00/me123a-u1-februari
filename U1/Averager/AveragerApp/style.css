@@ -18,6 +18,8 @@ body {
 
 #top > div > div {
     font-weight: bolder;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 #grid {

@@ -15,4 +15,31 @@ VIDEO:  Record a video where you explain the two different ways (see above) of c
 
 */
 
+gridMaker( document.querySelector( "#grid" ), 4, 6 );
 
+function createNumberDiv () {
+        let numberDiv = document.createElement( "div" );
+        numberDiv.innerHTML = randomNumber(100);
+
+        return numberDiv;
+}
+
+function gridMaker ( gridContainer, R, C ) {
+        gridContainer.style.gridTemplateRows = `repeat( ${R}, 1fr )`;
+        gridContainer.style.gridTemplateColumns = `repeat( ${C}, 1fr )`;
+
+        let nTotal = R * C;
+        for (let i = 0; i < nTotal; i++ ) {
+                gridContainer.appendChild( createNumberDiv() );
+        }
+
+        /*for (let c = 0; c < C; c++) {
+                for (let r = 0; r < R; r++) {
+                        gridContainer.appendChild( createNumberDiv() );
+                }
+        }*/
+}
+
+function randomNumber (max) {
+        return Math.floor( max * Math.random() );
+}

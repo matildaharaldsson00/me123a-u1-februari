@@ -6,7 +6,7 @@ body {
 }
 
 * {
-    font: 20px "helvetica";
+    font: 20px "Roboto Condensed";
 }
 
 #top > div {
@@ -29,9 +29,9 @@ body {
 
     font-size: 3vh;
 
-    border: 1px solid rgb(207, 148, 241);
+    border: 1px solid grey;
 
-    font: 25px "helvetica";
+    font: 25px "Supermercado One";
 }
 
 #grid > div {
@@ -39,15 +39,15 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-color: rgb(225, 181, 231);
+    background-color: grey;
 }
 
 #grid > div.selected {
-    background-color: rgb(207, 148, 241);
-    color: rgb(225, 181, 231);
+    background-color: lightpink;
+    color: blueviolet;
 }
 
 #geid > div:hover {
     cursor: pointer;
-    box-shadow: 0 0 10px rgb(207, 148, 241);
+    box-shadow: 0 0 10px black;
 }
